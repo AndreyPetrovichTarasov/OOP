@@ -1,6 +1,3 @@
-from src.product import Product
-
-
 class Category:
     name: str
     description: str
@@ -14,5 +11,3 @@ class Category:
         self.products = products
         Category.product_count += len(products)
         Category.category_count += 1
-
-
