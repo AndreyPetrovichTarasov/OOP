@@ -3,10 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-.flake8
+
 #.gitignore
 
-poetry.lock
+
 
 # C extensions
 *.so
