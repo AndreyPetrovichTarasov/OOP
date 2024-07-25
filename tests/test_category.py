@@ -5,7 +5,7 @@ from src.category import Category
 def test_category(category):
     assert category.name == "Смартфоны"
     assert category.description == "Смартфоны, как средство"
-    assert category.products == []
+    assert category.products == ""
 
     assert category.product_count == 0
     assert category.category_count == 1
@@ -26,7 +26,7 @@ def test_add_product():
 
 def test_products_property():
     # Arrange
-    category = Category("Electronics", "Various electronic products")
+    category = Category("Electronics", "Various electronic products", [])
     product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
     product2 = Product("iPhone 14", "128GB, Black", 150000.0, 3)
     category.add_product(product1)
