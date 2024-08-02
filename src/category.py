@@ -25,6 +25,8 @@ class Category:
             total_quantity += product.quantity
         return f"{self.name}, количество продуктов: {total_quantity} шт."
 
+    def get_product_list(self):
+        return self.__products
 
     @property
     def products(self):
