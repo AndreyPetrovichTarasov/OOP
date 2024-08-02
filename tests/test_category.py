@@ -33,3 +33,7 @@ def test_products_property():
 
     assert "Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт." in products_str
     assert "iPhone 14, 150000.0 руб. Остаток: 3 шт." in products_str
+
+
+def test_category_str(category):
+    assert str(category) == "Смартфоны, количество продуктов: 0 шт."
