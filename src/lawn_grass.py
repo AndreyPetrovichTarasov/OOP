@@ -10,5 +10,5 @@ class LawnGrass(Product):
 
     def __add__(self, other):
         if isinstance(other, LawnGrass):
-            return self.quantity + other.quantity
+            return (self.price * self.quantity) + (other.price * other.quantity)
         raise TypeError
