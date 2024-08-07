@@ -13,9 +13,9 @@ def test_lawngrass_init(lawngrass1):
 
 def test_lawngrass_add(lawngrass1, lawngrass2):
     result = lawngrass1 + lawngrass2
-    assert result == 35
+    assert result == 16750.0
 
 
 def test_lawngrass_error(lawngrass1):
     with pytest.raises(TypeError):
-        result = lawngrass1 + 1
+        lawngrass1 + 1

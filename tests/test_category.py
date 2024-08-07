@@ -44,7 +44,6 @@ def test_category_str(category):
 def test_add_product_error():
     # Arrange
     category = Category("Electronics", "Various electronic products", [])
-    product = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
 
     with pytest.raises(TypeError):
         category.add_product(category)
