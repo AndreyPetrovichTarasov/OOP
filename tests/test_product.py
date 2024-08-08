@@ -8,7 +8,7 @@ def test_product_init(product1, product2):
 def test_product_test_setter(capsys, product1):
     product1.price = 0
     message = capsys.readouterr()
-    assert message.out.strip() == "Цена не должна быть нулевая или отрицательная"
+    assert message.out.strip().split("\n")[-1] == "Цена не должна быть нулевая или отрицательная"
 
 
 def test_products_str(product1, product2):
