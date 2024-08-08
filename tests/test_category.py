@@ -1,3 +1,5 @@
+import pytest
+
 from src.product import Product
 from src.category import Category
 
@@ -37,3 +39,11 @@ def test_products_property():
 
 def test_category_str(category):
     assert str(category) == "Смартфоны, количество продуктов: 0 шт."
+
+
+def test_add_product_error():
+    # Arrange
+    category = Category("Electronics", "Various electronic products", [])
+
+    with pytest.raises(TypeError):
+        category.add_product(category)

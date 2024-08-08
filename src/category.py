@@ -16,8 +16,11 @@ class Category:
         Category.category_count += 1
 
     def add_product(self, product: Product):
-        self.__products.append(product)
-        self.product_count += 1
+        if isinstance(product, Product):
+            self.__products.append(product)
+            self.product_count += 1
+        else:
+            raise TypeError
 
     def __str__(self):
         total_quantity = 0

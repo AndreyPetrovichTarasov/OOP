@@ -1,7 +1,3 @@
-from src.product import Product
-from src.category import Category
-
-
 def test_product_init(product1, product2):
     assert product1.name == "Samsung Galaxy S23 Ultra"
     assert product1.description == "256GB, Серый цвет, 200MP камера"
