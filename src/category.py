@@ -38,11 +38,6 @@ class Category:
             products_str += f"{str(product)}\n"
         return products_str
 
-    # @add_product.setter
-    # def add_product(self, product: Product):
-    #     self.__products.append(product)
-    #     Category.product_count += 1
-
     def middle_price(self):
         try:
             return sum([product.quantity for product in self.__products]) / len(self.__products)
