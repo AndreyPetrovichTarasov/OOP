@@ -42,3 +42,9 @@ class Category:
     # def add_product(self, product: Product):
     #     self.__products.append(product)
     #     Category.product_count += 1
+
+    def middle_price(self):
+        try:
+            return sum([product.quantity for product in self.__products]) / len(self.__products)
+        except ZeroDivisionError:
+            return 0
